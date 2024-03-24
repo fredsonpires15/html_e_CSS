@@ -1,0 +1,253 @@
+*{box-sizing: border-box;-webkit-box-sizing: border-box;}
+body, html{min-height: 100%; height: 100%;}
+body{
+	margin: 0;
+	background: linear-gradient(to bottom right, red, orange);
+	background: linear-gradient(to bottom right, red, orange);
+	overflow-x: hidden;
+}
+.commonblock{float: left; width: 100%; height: 100%; position: relative; display: flex; flex-wrap: wrap; flex-direction: column; align-items: center; overflow-y: auto; padding: 80px 0;}
+.commblockinner{
+	display: flex;justify-content: center;flex-wrap: wrap;align-items: center;margin: auto;
+}
+.container{width: 100%; margin: auto; display: flex; flex-wrap: wrap; justify-content: center;}
+/* DEFAULT */
+
+
+
+
+
+/* MAIN CSS STARTS */
+.fxblock{
+	float: left;
+	width: 400px;
+	border-radius: 14px;-webkit-border-radius: 14px;
+	background: #fff;
+	font-family: 'Inter';
+	overflow: hidden;
+	box-shadow:10px 10px 35px rgba(0,0,0,0.2);
+	-webkit-box-shadow:10px 10px 35px rgba(0,0,0,0.2);
+}
+.fxtabs{
+	float: left;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.fxtabs a{
+	float: left;
+	flex-basis: 50%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: linear-gradient(to bottom right, red, orange);
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	font-weight: 300;
+}
+.fxtabs a.active{
+	background: #fff;
+	font-weight: 600;
+	color: #000;
+}
+.fxtabs a span{
+	margin-right: 5px;
+}
+.fxcontentwrap{
+	float: left;
+	width: 100%;
+	padding: 50px 50px;
+}
+.fxcontent{
+
+}
+.fxcontent .googlesignin{
+	float: left; width: 100%; border: 1px solid #ddd;
+	border-radius:50px; -webkit-border-radius:50px;
+	margin-bottom: 32px;
+	background: #fff;
+	transition:0.4s; -webkit-transition:0.4s;
+}
+.fxcontent .googlesignin:hover{
+	background: #d4e5f7;
+}
+.fxcontent .googlesignin a{
+	float: left; width: 100%;
+	display: flex; flex-wrap: wrap; justify-content: center;
+	padding: 12px 30px;
+	text-align:center;
+	color:#000;
+	font-size:14px;
+	font-family:'Inter';
+	text-decoration: none;
+}
+.fxcontent .googlesignin a img{
+	float: left; width: 20px; height: auto; margin-right: 10px;
+}
+.fxcontent p{
+	text-align: center;
+	color: #000;
+	font-size: 15px;
+	font-weight: normal;
+	margin:0 0 30px 0;
+}
+.fxcontent form{
+	margin-top: 0;
+}
+.fxcontent form input{
+	float: left;
+	width: 100%;
+	height: 52px;
+	padding: 0 0 0 15px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin-bottom: 15px;
+}
+.fxcontent form input:focus{
+	outline-color: #0373fc;
+}
+.fxcontent form button{
+	float: left;
+	width: auto;
+	height: 58px;
+	padding: 0 50px;
+	text-align:center;
+	color:#fff;
+	font-size:15px;
+	font-family:'Inter';
+	cursor: pointer;
+	margin: 25px 0 0 0;
+	border-radius:50px;
+	-webkit-border-radius:50px;
+	background: #03a65f;
+	border:none;
+	transition:0.3s;
+	-webkit-transition:0.3s;
+}
+.fxcontent form button span{
+	margin-left: 5px;
+}
+.fxcontent form button:hover{
+	background: #0f3187;
+}
+.fxcontent form a.fp{
+	float: left;
+	text-align:left;
+	color:#3580ce;
+	font-size:14px;
+	font-family:'Inter';
+	font-weight: 500;
+	text-decoration: none;
+	transition:0.3s; -webkit-transition:0.3s;
+}
+.fxcontent form a.fp:hover{
+	text-decoration: underline;
+}
+.fxcontent .signuptext,
+.fxcontent .termtext{
+	text-align: center;
+	color: #000;
+	font-size: 15px;
+	font-weight: normal;
+	margin:45px 0 0 0;
+}
+.fxcontent .signuptext a,
+.fxcontent .termtext a{
+	color:#3580ce;
+	text-decoration: none;
+}
+.fxcontent .signuptext a:hover,
+.fxcontent .termtext a:hover{
+	text-decoration: underline;
+}
+.fxcontent .termtext{
+	float: left;
+	width: 100%;
+	text-align: left;
+	font-size: 13px;
+}
+.passwordfield{
+	float: left; width: 100%;
+	position: relative;
+	margin-bottom: 15px;
+}
+.passwordfield input{
+	margin-bottom: 0 !important;
+}
+.passwordfield .psicon{
+	position: absolute;
+	width: 24px; height: 20px;
+	right: 18px; top: 0; bottom: 0;
+	margin: auto 0;
+	z-index: 2;
+	cursor: pointer;
+	text-align: right;
+	font-size: 15px;
+	color: #3580ce;
+}
+
+
+
+
+/* RESPONSIVE CSS STARTS (MOBILE FRIENDLY) */
+@media(max-width:1024px){
+.fxblock{
+	width: 50%;
+}
+}
+/* END BREAK */
+
+
+@media(max-width:768px){
+.container{
+	padding: 0 40px;
+}
+.fxblock{
+	width: 100%;
+}
+}
+/* END BREAK */
+
+
+
+@media(max-width:520px){
+.fxtabs a{
+	height: 52px;
+	line-height: 52px;
+	font-size: 14px;
+}
+.fxcontentwrap{
+	padding: 35px 30px;
+}
+.fxcontent .googlesignin a{
+	padding: 10px 15px;
+	font-size:13px;
+}
+.fxcontent .googlesignin a img{
+	width: 18px;margin-right: 7px;
+}
+.fxcontent p{
+	font-size: 14px;
+}
+.fxcontent form input{
+	height: 45px;
+	padding: 0 0 0 12px;
+	margin-bottom: 12px;
+}
+.fxcontent form button{
+	height: 52px;
+	padding: 0 35px;
+	font-size:14px;
+}
+.fxcontent form a.fp{
+	font-size:13px;
+}
+.fxcontent .signuptext,
+.fxcontent .termtext{
+	font-size: 14px;
+	margin:40px 0 0 0;
+}
+}
+/* END BREAK */

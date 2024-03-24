@@ -1,0 +1,59 @@
+
+body{
+    background:#d2d2c1 url("imagens/fundo.png");
+    font: 16px Arial,Helvetica, sans-serif ;
+    
+
+}
+
+#principal{
+    width: 900px;
+}
+
+#menu{
+    background: #c5c5b2;
+    border-radius: 20px;
+    padding: 18px;
+    
+}
+
+#conteudo{
+    background-color: #FAF7E4;
+    padding:18px ;
+}
+
+
+.foto2{
+    border: 5px solid #C9B4A3;
+    
+}
+
+.foto3{
+    border: 5px solid #C9B4A3;
+}
+
+footer{
+    width: 900px;
+    text-align: center;
+}
+
+a{
+    color: #7D7F56;
+    background-color:#F9F6E1 ;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+
+    margin-right: 23px;
+    margin-left: 23px;
+}
+
+
+h1{
+    color:#828271;
+    font-size: 1.2em;
+
+    
+}

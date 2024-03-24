@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Logbox - A Free Login Register Template</title>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="js/jquery.js"></script>
+	</head>
+	<!--/ HEAD -->
+
+
+	<body>
+
+
+		<div class="commonblock">
+			<div class="commblockinner">
+				<div class="container">
+					
+					<!-- MAIN HTML STARTS -->
+					<div class="fxblock orange">
+
+						<div class="fxtabs">
+							<a href="javascript:void();" class="logintab active">
+								<span class="fa-solid fa-key"></span> Login
+							</a>
+							<a href="javascript:void();" class="regtab">
+								<span class="fa-solid fa-user-plus"></span> Register
+							</a>
+						</div>
+						<!--/ Tabs -->
+
+						<div class="fxcontentwrap">
+
+
+
+
+							<div class="fxcontent loginbox">
+
+								<div class="googlesignin">
+									<a href="javascript:void();" class="glink">
+										<img src="images/google.svg" alt="">
+										Sign in with Google
+									</a>
+								</div>
+
+								<p>Or Enter login details below.</p>
+
+								<form method="post" action="#">
+
+									<input type="text" name="username" placeholder="Username" pattern="[^_][A-Za-z-0-9_]*" minlength="3" maxlength="15" title="Blank Space and Special Characters are not allowed." required>
+
+									<input type="password" name="password" placeholder="Password" required>
+									<a href="#" class="fp">Forgot Password?</a>
+
+									<br clear="all" />
+
+									<button type="submit" name="submit">
+										Login <span class="fa-solid fa-angle-right"></span>
+									</button>
+
+									<br clear="all" />
+
+									<div class="signuptext">
+										Don't have an account? <a href="javascript:void();" class="signuplink">Sign Up</a>
+									</div>
+
+								</form>
+
+							</div>
+							<!--/ Login Form Box -->
+
+
+
+
+							<div class="fxcontent regbox" style="display:none;">
+
+								<div class="googlesignin">
+									<a href="javascript:void();" class="glink">
+										<img src="images/google.svg" alt="">
+										Sign Up with Google
+									</a>
+								</div>
+
+								<p>Or Use the Registration Form below.</p>
+
+								<form method="post" action="#">
+									<input type="text" name="name" placeholder="Your Name" pattern="[^\s][a-zA-ZÀ-ž\s]+" maxlength="30" title="Do not start with Empty Space. Numbers are not allowed" required>
+
+									<input type="email" name="email" placeholder="Email Address" required>
+
+									<input type="text" name="username" placeholder="Username" pattern="[^_][A-Za-z-0-9_]*" minlength="3" maxlength="15" title="Blank Space and Special Characters are not allowed." required>
+
+									<div class="passwordfield">
+										<div class="psicon">
+											<span class="fa-regular fa-eye"></span>
+											<span class="fa-regular fa-eye-slash" style="display:none;"></span>
+										</div>
+										<input type="password" name="password" id="firstpassword" placeholder="Password" required>
+									</div>
+
+									<input type="password" name="confirm" id="secondpassword" placeholder="Confirm Password" required>
+
+									<button type="submit" name="submit">
+										Register Now <span class="fa-solid fa-angle-right"></span>
+									</button>
+
+									<div class="termtext">
+										By Signing Up (Google or Form), You Agree to Our <a href="#">Terms and Conditions.</a>
+									</div>
+
+								</form>
+
+							</div>
+							<!--/ Register Form Box-->
+
+						</div>
+						<!--/ fxcontentwrap -->
+
+					</div>
+					<!--/ FXBLOCK -->
+					
+
+				</div>
+			</div>
+		</div>
+		<!--/ COMMON BLOCK-->
+
+
+
+		<script>
+			jQuery(document).ready(function($) {
+
+				// LOGIN AND REGISTRATION FORM SCRIPT
+				$('.logintab').on('click', function() {
+					$(this).addClass('active');
+					$(this).siblings('a').removeClass('active');
+					$('.loginbox').fadeIn();
+					$('.regbox').hide();
+				});
+
+				$('.regtab').on('click', function() {
+					$(this).addClass('active');
+					$(this).siblings('a').removeClass('active');
+					$('.regbox').fadeIn();
+					$('.loginbox').hide();
+				});
+
+				$('.signuplink').on('click', function() {
+					$('.regtab').addClass('active');
+					$('.logintab').removeClass('active');
+					$('.regbox').fadeIn();
+					$('.loginbox').hide();
+				});
+
+				$('.psicon').click(function(){
+					var getpasswordfield = document.getElementById('firstpassword');
+					var thischild1 = $(this).find('span.fa-eye');
+					var thischild2 = $(this).find('span.fa-eye-slash');
+					if(getpasswordfield.type === 'password'){
+						getpasswordfield.type = 'text';
+						thischild2.show();
+						thischild1.hide();
+					}else{
+						getpasswordfield.type = 'password';
+						thischild1.show();
+						thischild2.hide();
+					}
+				});
+
+				$('#secondpassword').on('change', function(){
+					var password = $('#firstpassword').val();
+				  	var confirm = $('#secondpassword').val();
+				  	if (confirm == password) {
+				    	$('#secondpassword')[0].setCustomValidity('');
+				  	} else {
+				    	$('#secondpassword')[0].setCustomValidity('Passwords do not match');
+				  	}
+				});
+
+			});	
+		</script>
+		
+	</body>
+	<!--/ BODY -->
+</html>
+<!--/ HTML -->
+<!--/ Template By LayoutFlow (https://layoutflow.com/) -->

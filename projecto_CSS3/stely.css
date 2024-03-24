@@ -1,0 +1,165 @@
+P{ 
+    color: rgb(15, 14, 24);
+}
+
+h1{
+    color: rgb(0, 255, 60);
+}
+.cima{
+    width: 98%;
+    height: 920px;
+    background-color: chocolate; 
+    border-radius: 10px;
+    border-color: rgb(1, 0, 0) red green yellowgreen;
+    border-width: 15px;
+    border-style: outset;   
+}
+
+.baixo{
+    width: 30%;
+    background-color: blueviolet;   }
+h2{
+    color: aliceblue;
+}
+
+
+/* ------------- modelo de caixa------------- */
+
+.conteudo{
+    border: 1px solid rgb(5, 232, 39);
+    width: 450px;
+
+               /*====espaçamento interno====*/
+    /*padding-top: 20px;   -  padding servi para aplica espaçamento interno
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 15px;*/
+
+   /* padding: 20px 0px 0px 30px;  - padding: top right bottom teft  */
+
+   padding: 20px; /* - aplica 20px em todos os lados*/
+
+                /*====espaçamento externo====*/
+
+
+     /* Usamos margin para colocar o espaçamento externo*/           
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+
+}
+/* --------- Fim de modelo de caixa---------- */
+
+
+/* --------- Elementos Flutuantes ----------- */
+
+/*  A 'float' propriedade é usada para posicionar e formatar conteúdo  em um contêiner
+
+A floatpropriedade pode ter um dos seguintes valores:
+
+      'left' - O elemento flutua à esquerda do seu contêiner
+      'right' - O elemento flutua à direita do seu contêiner
+      'none' - O elemento não flutua (será exibido exatamente onde ocorre no texto). Este é o padrão
+      'inherit' - O elemento herda o valor float de seu pai
+
+    'clear' - é usado para limpar o fluxo futuante a float a left, a right ou both ( ambos os lados)
+*/
+
+#principal{
+    background-color: black;
+    border: 4px solid goldenrod ;
+}
+
+.conteudo1{
+    background: rgb(35, 47, 175);
+    border: 1px solid gray;
+    width: 100px;
+    height: 200px;
+    margin:20px ;
+    float: left;
+    padding-left: 40px;
+
+}
+
+.conteudo2{
+    background: rgb(22, 172, 80);
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin:12px 0 12px 0  ;
+    
+    padding-left: 40px; 
+
+}
+
+.conteudo3{
+    background: rgb(135, 27, 95);
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin:0px ;
+  
+    padding-left: 40px;
+
+}
+
+.clear{
+    clear: both;
+}
+
+/* -----------  Fim de Elementos Flutuantes  ------------ */
+
+
+
+/* =========== Elementos Flutuantes na Prática ========== */
+
+#principal-1{
+    width:920px;  
+}
+
+.noticia{ 
+    background-color: rgb(208, 208, 219);
+    width:265px ;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+.imagem-galeria{
+    background: rgb(218, 203, 203);
+    width:265px;
+    padding: 5px;
+    float: left;
+
+}
+
+.texto-galeria{
+    padding-left: 70px;
+    
+}
+
+.texto{
+    color:rgb(59, 57, 57);
+}
+
+
+.clear{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

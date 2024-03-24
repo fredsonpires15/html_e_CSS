@@ -1,0 +1,229 @@
+    *{
+        box-sizing: border-box;
+        margin: 0; padding: 0;
+        outline: 0; font-size: 100%;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+
+    body{
+        padding: 0 0;
+        background: rgba(0, 0, 0, 0.04);
+        font-size:100%;
+    }
+
+    .container{
+        width: 74vw;
+        margin: 0 auto 0 auto;   
+    }
+
+    .container.wide{
+        width: 100%;
+    }
+
+    ::-webkit-scrollbar-track{
+        -webkit-box-shadow:inset 0 0 6px  #00021c;
+        background-color: #555;
+        /*
+            ::-webkit-scrollbar-track: Este seletor é usado para estilizar 
+            a área de fundo da barra de rolagem. Neste caso, é definido um box-shadow (sombra) 
+            para criar um efeito de profundidade e a cor de fundo é definida como um Azul escuro.       
+        */
+    }
+
+    ::-webkit-scrollbar{
+        width: 4px;
+        background-color: #555;
+        /*
+        ::-webkit-scrollbar: Este seletor é usado para estilizar a própria barra de rolagem. 
+        Aqui, é especificada a largura da barra de rolagem (4 pixels) e a cor de fundo é definida 
+        como o mesmo cinza escuro (#555)
+        */
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color:pink;
+        /*
+        ::-webkit-scrollbar-thumb: Este seletor é usado para estilizar o "polegar" da barra de rolagem,
+        ou seja, a parte que o usuário pode arrastar para rolar o conteúdo. Neste caso, a cor de fundo
+        é definida como rosa (pink).
+        */
+    }
+    /* -- BREAK - FIM --*/
+
+
+
+    .barra_progresso-wrap{
+        position: fixed;
+        width: 100%;
+        height: 2px;
+        left: 0; top: 0;
+        z-index: 10;
+    }
+
+    .barra_progresso{
+        position:absolute;
+        width: 0%; height: 100%;
+        left:0; top: 0;
+        background:pink;     
+    }
+
+    /* Barra de Progresso */
+
+    header{
+        background: linear-gradient(to bottom, #39d5a4, #25b381);
+        position: absolute;
+        left: 0; top: 0;
+        width: 100%;
+        z-index: 9;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        transition: 0.3s;
+        -webkit-transition:0.3s;
+        padding-top: 3vw;
+    }
+    header.fixed{
+        position: fixed;
+        padding:1.vw 0 1vw 0;      
+    }
+    header:before{
+        position: absolute;
+        z-index: -1;
+        content: ' ';
+        width: 100%; height: 100%;
+        /*background: linear-gradient(to bottom, #629399, #8795a5);*/
+        left: 0; top: 0;
+        opacity: 0;
+        transition: 1s;
+        -webkit-transition:1s;
+    }
+    header.fixed:before{
+        opacity: 1;
+    }
+
+
+    .headercontainer{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        float: left;
+        width:100%;
+        padding-left: 74px;
+        padding-bottom: 20px;
+    }
+
+    
+    a.logo{
+        float:left;
+        
+    }
+
+    a.logo h3{
+        text-align: left;
+        color:#f0eaf0;
+        font-size: 1.6em;
+        font-family: Sans, sans-serif;
+        text-transform: uppercase;
+        margin-top: -10px ;
+    }
+
+    a.logo img{
+        float: left;
+        width: 60px; height: auto;
+        margin: 0 0 0;
+    }
+
+
+    nav{
+        float:right;
+        margin:0vw;
+    }
+    nav ul {
+        float:right;
+    }
+    nav ul li {
+        float:left;
+        list-style: none;
+        margin-top: -2vw;
+    }
+    nav ul li :last-of-type{
+        margin-right: 0;
+    }
+    nav ul li a {
+        float: left;
+        text-align: left;
+        color:#00021c;
+        font-size:0.8em;
+        font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+        text-transform:uppercase;
+        font-weight: 600;
+        padding: 0.6vw 1.3vw;
+        border-radius:5vw;
+        transition: 0.9s;
+        -webkit-transition: 0.9s;
+    }
+    nav ul li.active a,  nav ul li:hover a{
+        background:pink;
+        color: #00021c
+    }
+
+
+
+    /* --- BANNER---*/
+    .banner{
+
+        float: left;
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        position: relative;
+        z-index: 2; 
+    }
+    .slide-wrap{
+        position: relative;
+        float:  left;
+        width: 100%;
+        top:0; left:0;
+        aspect-ratio: 16/8;
+        overflow: hidden;
+    }
+    .slide-wrap.bx-wrappeer{
+        margin-bottom: 0;
+    }
+    .slide-wrap.slider-00.slide{
+        height:100%; overflow: hidden; 
+    }
+    .slide-wrap.slider-00.slide.slidecontainer{
+        position: absolute;
+        width:100%;
+        height:100%;
+        overflow: hidden;
+        z-index: 2;
+        background:linear-gradient(to bottom,  rgba(0,0,0,0.3),  rgba(0,0,0,0.6));
+        display: flex;
+        flex-wrap:wrap ;
+        align-items: flex-end;
+        padding: 0 0 5vw 0;
+    }
+    
+
+    
+
+
+
+
+
+
+
+    .arrows-wrap{
+        position: absolute;
+        right: 0;
+        bottom: 6.3vw;
+        z-index: 8;
+    }
+
+

@@ -1,0 +1,341 @@
+@media(max-width:1200px){
+	.container{
+		width: 80vw;
+	}
+}
+
+
+
+
+@media(max-width:960px){
+	.container{
+		width: 100%;
+		padding: 0 25px;
+	}
+	header{
+		padding: 11px 0 8px 0;
+	}
+	header.fixed{
+		padding: 11px 0 8px 0;
+	}
+	a.logo h3{
+		font-size:32px;
+		line-height: 100%;
+	}
+	a.logo img{
+		width: 130px; height: auto;
+	}
+
+
+	.menuicons{
+		display: block !important;
+		float: right;
+		background: pink;
+		margin: 0 0 0 0;
+		position: relative;
+		z-index: 12;
+	}
+	.menuicons a{
+		float: left;
+		width: 36px; height: 36px; line-height: 36px;
+		text-align:center;
+		color:#fff;
+		font-size:24px;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.menuicons a:hover{
+	}
+	nav{
+		display: none;
+		position: fixed;
+		width: 100%; height: 100%;
+		background: rgba(0,0,0,0.8);
+		z-index: 10;
+		left: 0; right: 0;
+	}
+	nav{
+		display: none;
+		position: fixed;
+		width: 100%; height: 100%;
+		background: rgba(0,0,0,0.8);
+		z-index: 10;
+		left: 0; top: 0;
+		padding:100px 60px;
+		overflow-y: scroll;
+	}
+	nav ul{
+		float: none;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	nav ul li{
+		float: none;
+		list-style: none;
+		margin:10px 0;
+	}
+	nav ul li a{
+		font-size:16px;
+		font-weight: 300;
+		padding:10px 22px;
+		border-radius:30px;
+	}
+
+
+
+	.bxslider_wrap{
+		aspect-ratio: 16/10;
+	}
+	.bxslider_wrap .bxslider .slide .slidecontent{
+		padding: 0 0 25px 0;
+	}
+	.bxslider_wrap .bxslider .slide .slidecontent h3{
+		font-size:40px;
+		max-width: 70%;
+		letter-spacing: -0.2vw;
+	}
+	.bxslider_wrap .bxslider .slide img.slideimage{
+		aspect-ratio: 16/10;
+	}
+	.bxslider_wrap .arrows a{
+		width: 7vw; height: 7vw;
+		font-size:2.5vw;
+	}
+	.bxslider_wrap .arrowswrap{
+		bottom: 25px; right: 25px;
+	}
+
+
+
+
+	.aboutcontent{
+		padding: 45px 0;
+	}
+	.aboutcontent .contentwrap{
+		padding: 0 25px;
+	}
+	.aboutcontent .contentwrap h3{
+		font-size:40px;
+		margin-bottom: 25px;
+	}
+	.aboutcontent .contentwrap p{
+		font-size:16px;
+		line-height: 150%;
+		margin-bottom: 25px;
+	}
+	.aboutcontent .contentwrap h4{
+		font-size:30px;
+		padding-top: 40px;
+		margin-top: 40px;
+	}
+	.aboutcontent .contentwrap h4 span{
+		font-size: 16px;
+	}
+	.aboutcontent .contentwrap .linkwrap{
+		margin:30px 0 0 0;
+	}
+	.aboutcontent .contentwrap a.buylink{
+		width: auto;
+		height: auto;
+		padding: 12px 50px;
+		font-size:17px;
+	}
+	.aboutcontent .contentwrap a.buylink span{
+		font-size:13px;
+	}
+
+
+
+
+	.picgallery .item .overlay a{
+		visibility: visible;
+		opacity: 1;
+	}
+	.picgallery .item .overlay a span{
+		font-size:18px;
+	}
+	.picgallery .item .overlay a.pp span{
+		font-size:32px;
+	}
+	.picgallery .item .overlay .info{
+		padding: 15px 15px;
+	}
+	.picgallery .item .overlay h3{
+		font-size:13px;
+	}
+	.picgallery .item .overlay a span{
+		position:absolute;
+		left:initial; right: 15px;
+		top:15px;
+		transform:translate(0,0);
+		-webkit-transform:translate(0,0);
+	}
+	.picgallery .item .overlay a.pp span{
+		position:absolute;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+		-webkit-transform:translate(-50%,-50%);
+	}
+
+
+
+
+
+	.specs{
+		padding:45px 0;
+		padding-top: 30px;
+	}
+	.specs .contentwrap{
+		padding: 0 25px;
+	}
+	.specs .contentwrap h3{
+		font-size:40px;
+		margin-bottom: 15px;
+	}
+	.specs .contentwrap p{
+		font-size:16px;
+		line-height: 150%;
+		margin-bottom: 25px;
+	}
+	.specs .tablewrap{
+		width: 70%;
+		margin: 30px auto 0 auto;
+	}
+	.specs .tablewrap table tr th{
+		font-size:14px;
+		padding: 12px 20px;
+	}
+	.specs .tablewrap table tr td{
+		font-size:14px;
+		padding: 12px 20px;
+	}
+
+
+
+
+	.contact{
+		padding: 45px 0;
+	}
+	.contact h3{
+		font-size:40px;
+		margin-bottom: 15px;
+	}
+	.contact p{
+		font-size:16px;
+		line-height: 150%;
+		margin-bottom: 25px;
+	}
+	.formwrap{
+		margin-top: 30px;
+	}
+	.formwrap form input[type="text"],
+	.formwrap form input[type="email"],
+	.formwrap form textarea{
+		width:48%;
+		height: 45px;
+		border-radius:3px;
+		padding: 0 0 0 15px;
+		font-size:14px;
+		margin-bottom: 15px;
+	}
+	.formwrap form textarea{
+		width: 100%;
+		height: 100px;
+		padding: 15px;
+		margin-top:0;
+		margin-bottom:25px;
+	}
+	.formwrap form button{
+		width: auto;
+		height: 52px;
+		font-size:16px;
+		border-radius:40px;
+		padding: 0 40px;
+	}
+	.formwrap form button span{
+		font-size:13px;
+		margin-left: 8px;
+	}
+
+
+
+	footer{
+		padding: 45px 0;
+	}
+	footer .disclaimer{
+		margin-bottom: 40px;
+	}
+	footer .disclaimer h4{
+		font-size:18px;
+		margin-bottom: 15px;
+	}
+	footer .disclaimer p{
+		font-size:13px;
+	}
+	footer .copyright{
+		font-size:15px;
+	}
+	footer .social{
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+	}
+	footer .social h4{
+		font-size:15px;
+		margin-right: 10px;
+	}
+	footer .social a{
+		font-size:15px;
+		margin: 0 0 0 5px;
+	}
+}
+
+
+
+@media(max-width:440px){
+	.bxslider_wrap,
+	.bxslider_wrap .bxslider .slide img.slideimage{
+		aspect-ratio: 1/1;
+	}
+
+
+	.picgallery .item .overlay a span{
+		font-size:15px;
+	}
+	.picgallery .item .overlay .info{
+		padding: 12px 10px;
+	}
+	.picgallery .item .overlay h3{
+		font-size:10px;
+	}
+	.picgallery .item{
+		flex-basis: 33.33%;
+		padding: 1vw 1vw;
+	}
+	.picgallery .item .overlay a span{
+		right: 10px;
+		top:10px;
+	}
+
+
+
+	.specs .tablewrap{
+		width: 100%;
+		margin: 30px auto 0 auto;
+	}
+	.specs .tablewrap table tr th{
+		font-size:13px;
+		padding: 9px 15px;
+	}
+	.specs .tablewrap table tr td{
+		font-size:13px;
+		padding: 9px 15px;
+	}
+}
