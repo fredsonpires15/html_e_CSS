@@ -1,0 +1,150 @@
+
+/*----Cria Barra de navegação vertical-----*/
+
+/* ul{
+    border: 1px solid #00021c;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+li{
+    padding: 4px 20px;
+    border: 1px solid #00021c;
+    background: url(fotos/seta.png) no-repeat left center;
+} */
+
+
+    /*---------------- Barra de Navegacão Vertical-------------------  */
+   /*  ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0; 
+    }
+
+    ul a{
+        border: 1px solid red;
+        width: 200px;
+        height: 40px;
+        display: block;
+        color: #00021c;
+        text-decoration: none;
+        text-indent: 30px;
+        line-height: 40px;
+        background: #f7b600 url(fotos/menu.png) no-repeat left center;
+    }
+
+    a:hover{
+        background-position: right bottom;
+        background-color: #f99200;
+        color: rgb(241, 243, 244);
+        font-size: 1.4em;
+    }
+
+    #home #navegacao .home a, 
+    #sobre-nos #navegacao .sobre-nos a,
+    #servicos #navegacao .servicos a,
+    #noticias #navegacao .noticias a{
+        background-position: right bottom;
+        background-color: #f99200;
+        color: rgb(241, 243, 244);
+        font-size: 1.4em;
+    }    */
+
+
+    /*******************************************************+*****+****+*+*
+    ----------------Barra de Navegação Horizontal-------------------*/
+
+   /*  ul{
+        
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 720px;
+        background: #159cb0 url(fotos/fundo-horizontal.png) repeat-x;
+        float:left;
+    }
+
+    ul li {
+        
+        float: left;
+    }
+
+    ul a {
+        display: block;
+        padding: 0 2em;
+        line-height: 2em; 
+        text-decoration: none;
+        color: rgb(252, 252, 247);
+        background: url(fotos/divisor.png) repeat-y left top;
+
+    }
+
+    ul .primeiro a {
+        background: none;
+    }
+
+    ul a:hover{
+        color:#085662;
+        background: #44cade;
+    }
+
+    #home #navegacao .home a, 
+    #sobre-nos #navegacao .sobre-nos a,
+    #servicos #navegacao .servicos a,
+    #noticias #navegacao .noticias a{
+        color:#085662;
+        background: #44cade;
+        
+    }
+ */
+
+/*------------Fim da Barra Horizontal ------------------- */
+
+
+/*------------Aba de Navegação ------------------- */
+body{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+ul{
+        
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+    float:left;
+}
+
+ul li {
+    float: left;
+    background: url(fotos/_012-aba-nav/aba-direita.png) no-repeat top right ;
+}
+
+li a {
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(fotos/_012-aba-nav/aba-esquerda.png) no-repeat top left ;
+    color:#fff;
+}
+
+ul a:hover{
+   color: #894a1f;
+}
+
+ul #atual{
+    background: url(fotos/_012-aba-nav/aba-direita-atual.png) no-repeat top right ;
+}
+ul #atual a{
+    background: url(fotos/_012-aba-nav/aba-esquerda-atual.png) no-repeat  ;
+}
+/*------------Fim da Aba de Navegação ------------------- */
+
+
+
+
+
+    
+
