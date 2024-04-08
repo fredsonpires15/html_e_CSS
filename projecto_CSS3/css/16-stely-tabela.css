@@ -1,0 +1,81 @@
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+}
+
+table{
+    /* border: 1px solid; */
+    /* border-top: 1px solid #999; */
+    width: 600px;
+    border-collapse: separate;/*collapse*/
+}
+
+th, td{
+    /* border: 1.7px solid; */
+    padding: 7px;
+}
+
+th{
+    text-transform: uppercase;
+    border-top: 1px solid #d9cc0f;
+    border-bottom:2.7px solid #dbb706;
+    text-align: left;
+    letter-spacing: 0.1em;
+
+}
+tr:hover{
+    background-color: #978512;
+}
+
+tr.alternado{
+    background-color: #b9b92a;
+
+}
+
+.numero{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
